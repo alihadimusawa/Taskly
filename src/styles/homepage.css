@@ -1,0 +1,200 @@
+#homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* List of Task */
+
+#listOfTask{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    gap: 2%;
+}
+
+#taskContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 50px;
+    margin: 1vw;
+}
+
+img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+#taskTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+}
+
+#taskTop h6, #taskTop h5{
+    padding: 0;
+    margin: 2%;
+}
+
+#taskTop h5{
+    font-size: 1.5vw;
+}
+
+#taskTop h6{
+    font-weight: 300;
+    font-size: 1vw;
+}
+
+#taskMiddle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+#noteHeader{
+    text-align: center;
+}
+
+#taskBottom{
+    margin: 10px;
+}
+
+#toDo{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 10%;
+    align-items: center;
+    align-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+#toDo p{
+    margin-left: 1%;
+    font-size: 1.1vw;
+}
+
+#priorityImage{ 
+    width: 0.8vw !important;
+    height: 0.8vw !important;
+    margin-left: auto;
+}
+
+#taskBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    text-align: center;
+}
+
+#taskBottom p{
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+}
+
+#noteHeader{
+    font-weight: bold;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* Homepage Bottom */
+
+#homepageBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px !important;
+    gap: 1vw;
+    width: 99%;
+    margin: auto;
+}
+
+#mainTaskContainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 20%;
+    border-radius: 30px;
+    padding: 1vw;
+    height: inherit;
+}
+
+.mainTaskHeading{
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.6vw;
+    border-bottom: 1px solid black;
+}
+
+
+/* Weather Container */
+#weatherContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border:1px solid black;
+    padding: 10px;
+    background-color: gray;
+}
+
+#weatherContainer > div{
+    width: 100%;
+    padding: 0 1vw 0 1vw;
+}
+
+.weatherHeading{
+    text-align: center;
+    font-size: 2.1vw;
+}
+
+#weather img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: auto;
+}
+
+#weatherMiddle{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#weatherInfo p{
+    font-size: 0.8vw;
+    margin: 0;
+}
+
+#weatherInfoHeader{
+    margin-top: 7% !important;
+    font-weight: 900;
+}
+
+.editButton{
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1vw;
+    width: 80%;
+    margin: auto;
+}
