@@ -1,5 +1,15 @@
 body, html{
     height: 100%;
+    background-color: #e2daeb;
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: black;
 }
 
 #homepage{
@@ -13,24 +23,26 @@ body, html{
 /* List of Task */
 
 #listOfTask{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(4, 21.5vw);
     justify-content: space-around;
     row-gap: 3vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    height: 40vw;
-    overflow: scroll;
+    height: 23vw;
+    overflow-y: scroll;
+
 }
 
 #taskContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid red;
     border-radius: 50px;
     height: 22.5vw;
+    background-color: #abd1c6;
+    box-shadow: -0.5vw 0.5vw #004643;
 }
 
 img{
@@ -72,12 +84,13 @@ img{
 #toDo{
     display: flex;
     flex-direction: row;
-    width: 95%;
-    height: 10%;
+    width: 90%;
+    height: 3vh;
     align-items: center;
     align-content: space-around;
     padding: 0;
     margin: 0;
+    margin-right: 1vw;
 }
 
 #toDo p{
@@ -120,6 +133,7 @@ img{
     cursor: pointer;
     width: 20%;
     align-self: center;
+    margin-top: 5vh;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -134,7 +148,7 @@ img{
     gap: 1vw;
     width: 100%;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
 }
 
@@ -162,12 +176,13 @@ img{
     margin-bottom: 10%;
     padding: 0;
     font-size: 1.6vw;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     height: 10%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 
 .editButton{
@@ -177,17 +192,25 @@ img{
     font-size: 1vw;
     width: 80%;
     margin: auto;
-    margin-top: 10%;
 }
 
 .mainTaskMiddle{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 70%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: auto;
     gap: 1vw;
+}
+
+.mainTaskMiddle::-webkit-scrollbar{
+    width: 0.3vw !important;
+}
+
+.mainTaskMiddle::-webkit-scrollbar-thumb{
+    color: white !important;
+    border-radius: 10px !important;
 }
 
 

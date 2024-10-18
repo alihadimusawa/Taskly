@@ -23,12 +23,6 @@ function MainTaskContainer(){
                 <ToDo/>
                 <ToDo/>
                 <ToDo/>
-                <ToDo/>
-                <ToDo/>
-                <ToDo/>
-                <ToDo/>
-                <ToDo/>
-                <ToDo/>
             </div>
             <button className="editButton">Edit</button>
         </div>
