@@ -6,13 +6,30 @@ function MainTaskContainer(){
             <h2 className="mainTaskHeading">
                 Daily Routine
             </h2>
-            <ToDo/>
-            <ToDo/>
-            <ToDo/>
-            <ToDo/>
-            <ToDo/>
-            <ToDo/>
-            <ToDo/>
+
+            <div className="mainTaskMiddle">
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+                <ToDo/>
+            </div>
             <button className="editButton">Edit</button>
         </div>
     )

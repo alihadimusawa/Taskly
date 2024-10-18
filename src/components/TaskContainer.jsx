@@ -4,8 +4,7 @@ function TaskContainer(){
     return(
         <div id="taskContainer">
             <div id="taskTop">
-                <h5>Monday</h5>
-                <h6>12-March-2024</h6>
+                <h5>Monday, 12 March 2024</h5>
             </div>
             <div id="taskMiddle">
                 <ToDo/>

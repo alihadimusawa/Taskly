@@ -1,7 +1,7 @@
 function Footer(){
     return (
         <div id="footer">
-            <h4>©2024 Ali Hadi Musawa | All Right Reserved</h4>
+            <h4>©2024 Taskly | All Right Reserved</h4>
         </div>
     )
 }

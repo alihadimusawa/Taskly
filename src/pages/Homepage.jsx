@@ -18,7 +18,18 @@ function Homepage(){
                 <TaskContainer/>
                 <TaskContainer/>
                 <TaskContainer/>
+                <TaskContainer/>
+                <TaskContainer/>
+                <TaskContainer/>
+                <TaskContainer/>
+                <TaskContainer/>
+                <TaskContainer/>
+                <TaskContainer/>
+                <TaskContainer/>
             </div>
+
+            <button className="showMore">Show More</button>
+
             <div id="homepageBottom">
                 <MainTaskContainer/>
                 <WeatherContainer/>

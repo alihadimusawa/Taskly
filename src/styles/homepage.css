@@ -1,18 +1,27 @@
+body, html{
+    height: 100%;
+}
+
 #homepage{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    height: 100%;   
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 /* List of Task */
 
 #listOfTask{
+    border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 21.5vw);
     justify-content: space-around;
-    gap: 2%;
+    row-gap: 3vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    height: 40vw;
+    overflow: scroll;
 }
 
 #taskContainer{
@@ -21,7 +30,7 @@
     justify-content: center;
     border: 2px solid red;
     border-radius: 50px;
-    margin: 1vw;
+    height: 22.5vw;
 }
 
 img{
@@ -29,27 +38,23 @@ img{
     height: 1.5vw;
 }
 
+/* Task Top */
+
 #taskTop{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100px;
     justify-content: center;
-}
-
-#taskTop h6, #taskTop h5{
-    padding: 0;
-    margin: 2%;
+    height: 25% !important;
 }
 
 #taskTop h5{
-    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3vw;
 }
 
-#taskTop h6{
-    font-weight: 300;
-    font-size: 1vw;
-}
+/* Task Middle */
 
 #taskMiddle{
     display: flex;
@@ -61,14 +66,7 @@ img{
     border-bottom: 1px solid black;
     padding: 0px;
     margin: 0px;
-}
-
-#noteHeader{
-    text-align: center;
-}
-
-#taskBottom{
-    margin: 10px;
+    height: 50%;
 }
 
 #toDo{
@@ -93,6 +91,13 @@ img{
     margin-left: auto;
 }
 
+/* Task Bottom */
+
+#noteHeader{
+    text-align: center;
+    font-weight: bold;
+}
+
 #taskBottom{
     display: flex;
     flex-direction: column;
@@ -100,6 +105,8 @@ img{
     align-items: center;
     gap: 0px;
     text-align: center;
+    margin: 0.5vw;
+    height: 25% !important;
 }
 
 #taskBottom p{
@@ -108,10 +115,12 @@ img{
     font-size: 1vw;
 }
 
-#noteHeader{
-    font-weight: bold;
+.showMore{
+    border-radius: 20px;
+    cursor: pointer;
+    width: 20%;
+    align-self: center;
 }
-
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 /* Homepage Bottom */
@@ -123,30 +132,67 @@ img{
     align-items: center;
     margin-top: 50px !important;
     gap: 1vw;
-    width: 99%;
+    width: 100%;
     margin: auto;
+    border: 1px solid black;
+    height: 100%;
 }
+
+
+/* Main Task Container */
 
 #mainTaskContainer{
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     width: 20%;
+}
+
+#mainTaskContainer, #weatherContainer{
+    height: 40vw;
     border-radius: 30px;
     padding: 1vw;
-    height: inherit;
 }
+
+
 
 .mainTaskHeading{
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
+    margin-bottom: 10%;
     padding: 0;
     font-size: 1.6vw;
     border-bottom: 1px solid black;
+    height: 10%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editButton{
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1vw;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.mainTaskMiddle{
+    border: 1px solid black;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    gap: 1vw;
 }
 
 
 /* Weather Container */
+
 #weatherContainer{
     display: flex;
     flex-direction: row;
@@ -154,7 +200,7 @@ img{
     align-items: center;
     width: 60%;
     border:1px solid black;
-    padding: 10px;
+    margin: 1vw;
     background-color: gray;
 }
 
@@ -188,13 +234,4 @@ img{
 #weatherInfoHeader{
     margin-top: 7% !important;
     font-weight: 900;
-}
-
-.editButton{
-    background-color: transparent;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1vw;
-    width: 80%;
-    margin: auto;
 }
