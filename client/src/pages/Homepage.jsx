@@ -4,7 +4,8 @@ import TaskContainer from "../components/TaskContainer"
 import MainTaskContainer from "../components/MainTaskContainer"
 import WeatherContainer from "../components/WeatherContainer"
 import "../styles/homepage.css"
-import React, { useState, useRef } from "react"
+import React, { useState, useRef, useEffect} from "react"
+import axios from "axios";
 
 function Homepage() {
 
@@ -31,13 +32,32 @@ function Homepage() {
         }
     }
 
-
-
     // -------- Change Background Color --------
-    [backgroundColor, setBackgroundColor] = useState([""])
-    [shadowColor, setShadowColor] = useState([
+    const [backgroundColor, setBackgroundColor] = useState("");
+    const [shadowColor, setShadowColor] = useState([
         "#004643", "#5b0302", "#654f02", "#530119"
-    ])
+    ]);
+
+
+    // -------- Getting Data from The Backend --------
+    const [listOfTasks, setListOfTasks] = useState();
+    const [listOfTodos, setListOfTodos] = useState();
+    
+    // Getting Task and Todos
+    const fetchApi = async()=> {
+        var response = await axios.get("http://localhost:3000/tasksAndTodos");
+        
+        response = response.data;;
+        
+        console.log(response[0]);
+        console.log(response[1]);
+    };
+
+    fetchApi();
+
+    // useEffect(() => {
+    //     fetchApi()
+    // }, []);
 
     return (
         <div id="homepage">
